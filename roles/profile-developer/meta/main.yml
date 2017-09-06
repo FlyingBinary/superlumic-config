@@ -11,11 +11,15 @@ galaxy_info:
   categories:
     - system
 dependencies:
-  - roderik.superlumic-computername
-  - roderik.superlumic-cli
-  - roderik.superlumic-homebrew
+  - name: IanTaylorFB.superlumic-computername
+    version: fbmaster
+  - name: IanTaylorFB.superlumic-cli
+    version: fbmaster
+  - name: IanTaylorFB.superlumic-homebrew
+    version: fbmaster
   #- roderik.superlumic-php
   #- roderik.superlumic-sublimetext
   #- roderik.superlumic-node
-  - roderik.superlumic-vim
+  - name: IanTaylorFB.superlumic-vim
+    version: fbmaster
   - profile-all

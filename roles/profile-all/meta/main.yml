@@ -11,5 +11,7 @@ galaxy_info:
   categories:
     - system
 dependencies:
-  - roderik.superlumic-computername
-  - roderik.superlumic-cli
+  - name: IanTaylorFB.superlumic-computername
+    version: fbmaster
+  - name: IanTaylorFB.superlumic-cli
+    version: fbmaster
