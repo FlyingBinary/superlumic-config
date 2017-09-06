@@ -21,8 +21,8 @@
 #- src: https://github.com/superlumic/ansible-role-sublimetext.git
 #  name: roderik.superlumic-sublimetext
 #
-#- src: https://github.com/superlumic/ansible-role-node.git
-#  name: roderik.superlumic-node
+- src: https://github.com/FlyingBinary/ansible-role-node.git
+  name: IanTaylorFB.superlumic-node
 #
 #- src: https://github.com/superlumic/ansible-role-postgresql.git
 #  name: roderik.superlumic-postgresql
