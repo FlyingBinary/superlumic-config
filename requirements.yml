@@ -2,7 +2,7 @@
 
 - src: https://github.com/FlyingBinary/ansible-role-homebrew.git
   name: IanTaylorFB.superlumic-homebrew
-  version: ""
+  version: fbmaster
 
 #- src: https://github.com/superlumic/ansible-role-osx-defaults.git
 #  name: roderik.superlumic-osx-defaults
@@ -24,7 +24,7 @@
 #
 - src: https://github.com/FlyingBinary/ansible-role-node.git
   name: IanTaylorFB.superlumic-node
-  version: ""
+  version: fbmaster
 #
 #- src: https://github.com/superlumic/ansible-role-postgresql.git
 #  name: roderik.superlumic-postgresql
