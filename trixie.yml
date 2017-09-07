@@ -9,7 +9,7 @@
 
   vars:
     - computername: trixie
-    - configure_git: 'no'
+    - configure_git: no
     - personal_homebrew_packages:
         - openssl
 
