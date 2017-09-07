@@ -4,10 +4,10 @@
   name: IanTaylorFB.superlumic-homebrew
   version: fbmaster
 
-#- src: https://github.com/FlyingBinary/ansible-role-osx-defaults.git
-#  name: IanTaylorFB.superlumic-osx-defaults
-#  version: fbmaster
-#
+- src: https://github.com/FlyingBinary/ansible-role-osx-defaults.git
+  name: IanTaylorFB.superlumic-osx-defaults
+  version: fbmaster
+
 - src: https://github.com/FlyingBinary/ansible-role-computername.git
   name: IanTaylorFB.superlumic-computername
   version: fbmaster
