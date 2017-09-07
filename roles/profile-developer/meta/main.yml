@@ -17,9 +17,9 @@ dependencies:
     version: fbmaster
   - name: IanTaylorFB.superlumic-homebrew
     version: fbmaster
-  #- roderik.superlumic-php
-  #- roderik.superlumic-sublimetext
-  #- roderik.superlumic-node
+  # - roderik.superlumic-php
+  # - roderik.superlumic-sublimetext
+  # - roderik.superlumic-node
   - name: IanTaylorFB.superlumic-vim
     version: fbmaster
   - profile-all

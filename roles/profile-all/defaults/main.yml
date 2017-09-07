@@ -1,0 +1,11 @@
+---
+
+global_homebrew_packages:
+  - git
+  # - openssl
+  # - python
+  # - python3
+
+global_homebrew_cask_apps:
+  # - firefox
+  - google-chrome

@@ -3,82 +3,88 @@
 - hosts: localhost
   connection: local
 
-  tasks:
-    - name: install personal cask applications
-      homebrew_cask: name={{item}} state=present
-      with_items:
-        ### Standard applications
-        - dropbox
-        - evernote
-        - firefox
-        - tableau
-        ### QuickLook plugins
-        - qlstephen
-        - quicklook-csv
-        - qlmarkdown
-        ### Security tools from https://objective-see.com/index.html
-        - blockblock
-        # - dylibhijackscanner # not found in brew cask search
-        - kextviewr
-        - knockknock
-        - lockdown # not working on Sierra 10.12
-        # - ostiarius # not needed after El Capitan 10.11
-        - oversight
-        - ransomwhere
-        - taskexplorer
-        - whatsyoursign
-
   roles:
     - profile-all
 
   vars:
     - computername: trixie
-    - configure_git: no
+    - configure_git: 'no'
+    - personal_homebrew_packages:
+        - openssl
+
+    - personal_homebrew_cask_apps:
+        - dropbox
+#    - personal_homebrew_cask_apps:
+#        - firefox
+#        - google-chrome
+#
+#
+#        ### Standard applications
+#        - dropbox
+#        - evernote
+#        - firefox
+#        - tableau
+#        ### QuickLook plugins
+#        - qlstephen
+#        - quicklook-csv
+#        - qlmarkdown
+#        ### Security tools from https://objective-see.com/index.html
+#        - blockblock
+#        # - dylibhijackscanner # not found in brew cask search
+#        - kextviewr
+#        - knockknock
+#        - lockdown # not working on Sierra 10.12
+#        # - ostiarius # not needed after El Capitan 10.11
+#        - oversight
+#        - ransomwhere
+#        - taskexplorer
+#        - whatsyoursign
+
     - osx_defaults:
-      - domain: 'com.apple.dock'
-        key: 'show-process-indicators'
-        type: boolean
-        value: true
-      - domain: 'com.apple.screencapture'
-        key: 'type'
-        type: string
-        value: png
-      - domain: 'NSGlobalDomain'
-        key: 'KeyRepeat'
-        type: integer
-        value: 2
-      - domain: 'NSGlobalDomain'
-        key: 'InitialKeyRepeat'
-        type: integer
-        value: 15
-      - domain: 'com.apple.menuextra.battery'
-        key: 'ShowPercent'
-        type: string
-        value: 'YES'
-      - domain: 'com.apple.finder'
-        key: 'FXPreferredViewStyle'
-        type: string
-        value: "clmv"
-      - domain: 'NSGlobalDomain'
-        key: 'NSNavPanelExpandedStateForSaveMode'
-        type: boolean
-        value: true
-      - domain: 'NSGlobalDomain'
-        key: 'PMPrintingExpandedStateForPrint'
-        type: boolean
-        value: true
-      - domain: 'NSGlobalDomain'
-        key: 'NSQuitAlwaysKeepsWindows'
-        type: boolean
-        value: false
-      - domain: 'com.apple.desktopservices'
-        key: 'DSDontWriteNetworkStores'
-        type: boolean
-        value: true
-      - domain: 'com.apple.print.PrintingPrefs'
-        key: 'Quit When Finished'
-        type: boolean
-        value: true
+        - domain: 'com.apple.dock'
+          key: 'show-process-indicators'
+          type: boolean
+          value: true
+        - domain: 'com.apple.screencapture'
+          key: 'type'
+          type: string
+          value: png
+        - domain: 'NSGlobalDomain'
+          key: 'KeyRepeat'
+          type: integer
+          value: 2
+        - domain: 'NSGlobalDomain'
+          key: 'InitialKeyRepeat'
+          type: integer
+          value: 15
+        - domain: 'com.apple.menuextra.battery'
+          key: 'ShowPercent'
+          type: string
+          value: 'YES'
+        - domain: 'com.apple.finder'
+          key: 'FXPreferredViewStyle'
+          type: string
+          value: "clmv"
+        - domain: 'NSGlobalDomain'
+          key: 'NSNavPanelExpandedStateForSaveMode'
+          type: boolean
+          value: true
+        - domain: 'NSGlobalDomain'
+          key: 'PMPrintingExpandedStateForPrint'
+          type: boolean
+          value: true
+        - domain: 'NSGlobalDomain'
+          key: 'NSQuitAlwaysKeepsWindows'
+          type: boolean
+          value: false
+        - domain: 'com.apple.desktopservices'
+          key: 'DSDontWriteNetworkStores'
+          type: boolean
+          value: true
+        - domain: 'com.apple.print.PrintingPrefs'
+          key: 'Quit When Finished'
+          type: boolean
+          value: true
 
 
 #      # 6 The OSX application firewall is enabled (system-wide).
