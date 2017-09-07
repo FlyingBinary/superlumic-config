@@ -7,7 +7,26 @@
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
+        ### Standard applications
         - dropbox
+        - evernote
+        - firefox
+        - tableau
+        ### QuickLook plugins
+        - qlstephen
+        - quicklook-csv
+        - qlmarkdown
+        ### Security tools from https://objective-see.com/index.html
+        - blockblock
+        # - dylibhijackscanner # not found in brew cask search
+        - kextviewr
+        - knockknock
+        - lockdown # not working on Sierra 10.12
+        # - ostiarius # not needed after El Capitan 10.11
+        - oversight
+        - ransomwhere
+        - taskexplorer
+        - whatsyoursign
 
   roles:
     - profile-all
