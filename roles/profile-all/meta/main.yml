@@ -13,5 +13,5 @@ galaxy_info:
 dependencies:
   - name: IanTaylorFB.superlumic-computername
     version: fbmaster
-  - name: IanTaylorFB.superlumic-cli
-    version: fbmaster
+#  - name: IanTaylorFB.superlumic-cli
+#    version: fbmaster
