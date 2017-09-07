@@ -15,3 +15,8 @@
   vars:
     - computername: trixie
     - configure_git: no
+    - osx_defaults:
+      - domain: 'com.apple.alf'
+        key: 'globalstate'
+        type: boolean
+        value: true
