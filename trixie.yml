@@ -6,6 +6,7 @@
   roles:
     - profile-all
     - IanTaylorFB.superlumic-homebrew
+    - IanTaylorFB.superlumic-google-fonts
 
   vars:
     - computername: trixie

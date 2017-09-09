@@ -12,6 +12,10 @@
   name: IanTaylorFB.superlumic-computername
   version: fbmaster
 
+- src: https://github.com/FlyingBinary/ansible-role-google-fonts.git
+  name: IanTaylorFB.superlumic-google-fonts
+  version: fbmaster
+
 #  - src: https://github.com/FlyingBinary/ansible-role-cli.git
 #    name: IanTaylorFB.superlumic-cli
 #    version: fbmaster
