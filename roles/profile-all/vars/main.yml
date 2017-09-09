@@ -9,3 +9,7 @@ global_homebrew_packages:
 global_homebrew_cask_apps:
   # - firefox
   - google-chrome
+
+global_google_fonts:
+  - "Open Sans"
+

@@ -11,6 +11,8 @@
   vars:
     - computername: trixie
     - configure_git: no
+    - personal_google_fonts:
+        - "Indie Flower"
     - personal_homebrew_packages:
         - openssl
 
