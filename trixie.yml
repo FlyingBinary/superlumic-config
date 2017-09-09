@@ -7,6 +7,7 @@
     - profile-all
     - IanTaylorFB.superlumic-homebrew
     - IanTaylorFB.superlumic-google-fonts
+    - IanTaylorFB.superlumic-chrome-extensions
 
   vars:
     - computername: trixie
