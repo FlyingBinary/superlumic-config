@@ -13,3 +13,7 @@ global_homebrew_cask_apps:
 global_google_fonts:
   - "Open Sans"
 
+global_chrome_extensions:
+  - sessionbuddy:
+      name: "Session Buddy"
+      id: "edacconmaakjimmfgnblocblbcdcpbko"
