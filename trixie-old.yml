@@ -1,0 +1,12 @@
+---
+
+- hosts: localhost
+  connection: local
+
+  roles:
+    - profile-all
+    - IanTaylorFB.superlumic-chrome-extensions
+
+  vars:
+    - computername: trixie-old
+    - configure_git: no
