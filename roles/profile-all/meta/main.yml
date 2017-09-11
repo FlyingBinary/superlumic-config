@@ -10,8 +10,8 @@ galaxy_info:
         - all
   categories:
     - system
-dependencies:
-  - name: IanTaylorFB.superlumic-computername
-    version: fbmaster
+dependencies: []
+#  - name: IanTaylorFB.superlumic-computername
+#    version: fbmaster
 #  - name: IanTaylorFB.superlumic-cli
 #    version: fbmaster
