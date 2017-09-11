@@ -14,6 +14,7 @@ global_google_fonts:
   - "Open Sans"
 
 global_chrome_extensions:
-  - sessionbuddy:
-      name: "Session Buddy"
-      id: "edacconmaakjimmfgnblocblbcdcpbko"
+  - { name: "Session Buddy", id: "edacconmaakjimmfgnblocblbcdcpbko" }
+#  - sessionbuddy:
+#      name: "Session Buddy"
+#      id: "edacconmaakjimmfgnblocblbcdcpbko"
