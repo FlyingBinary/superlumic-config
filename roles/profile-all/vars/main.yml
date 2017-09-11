@@ -14,7 +14,9 @@ global_google_fonts:
   - "Open Sans"
 
 global_chrome_extensions:
+  - { name: "1Password", id: "aomjjhallfgjeglblehebfpbcfeobpgk" }
+  - { name: "Ghostery", id: "mlomiejdfkolichcflejclcbmpeaniij" }
+  - { name: "GotoMeeting", id: "gaonpiemcjiihedemhopdoefaohcjoch" }
   - { name: "Session Buddy", id: "edacconmaakjimmfgnblocblbcdcpbko" }
-#  - sessionbuddy:
-#      name: "Session Buddy"
-#      id: "edacconmaakjimmfgnblocblbcdcpbko"
+  - { name: "uBlock Origin", id: "cjpalhdlnbpafiamejdnhcphjbkeiagm" }
+  - { name: "Webex", id: "jlhmfgmfgeifomenelglieieghnjghma" }
