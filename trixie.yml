@@ -6,8 +6,9 @@
   roles:
     - profile-all
     - IanTaylorFB.superlumic-computername
-    - IanTaylorFB.superlumic-osx-defaults
-    - IanTaylorFB.superlumic-homebrew
+    # These are getting called twice
+    #    - IanTaylorFB.superlumic-osx-defaults
+    #    - IanTaylorFB.superlumic-homebrew
     - IanTaylorFB.superlumic-google-fonts
     - IanTaylorFB.superlumic-chrome-extensions
 
