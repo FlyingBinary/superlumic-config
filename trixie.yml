@@ -11,6 +11,7 @@
     #    - IanTaylorFB.superlumic-homebrew
     - IanTaylorFB.superlumic-google-fonts
     - IanTaylorFB.superlumic-chrome-extensions
+    - IanTaylorFB.superlumic-mas
 
   vars:
     - computername: trixie
@@ -25,6 +26,7 @@
     - mas_installed_app_ids: []
     - mas_installed_apps:
         - { id: 409183694, name: "Keynote (7.1.1)" }
+        - { id: 715768417, name: "Microsoft Remote Desktop 8.0" }
 
     - osx_defaults:
         - domain: 'com.apple.dock'
