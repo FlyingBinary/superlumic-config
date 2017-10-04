@@ -20,6 +20,10 @@
   name: IanTaylorFB.superlumic-chrome-extensions
   version: fbmaster
 
+- src: https://github.com/FlyingBinary/ansible-role-mas.git
+  name: IanTaylorFB.superlumic-mas
+  version: fbmaster
+
 #  - src: https://github.com/FlyingBinary/ansible-role-cli.git
 #    name: IanTaylorFB.superlumic-cli
 #    version: fbmaster
