@@ -2,28 +2,28 @@
 
 global_homebrew_packages:
   - git
-  # - openssl
-  # - python
-  # - python3
+  - openssl
+  - python
+  - python3
 
 global_homebrew_cask_apps:
   ### Standard applications
-  #  - 1password
-  #  - dropbox
-  #  - evernote
-  #  - firefox
+  - 1password
+  - dropbox
+  - evernote
+  - firefox
   - google-chrome
   #  - little-snitch
-  #  - parallels-desktop
-  #  - skype
-  #  - tableau
-  #  - vyprvpn
+  - parallels-desktop
+  - skype
+  - tableau
+  - vyprvpn
   ### QuickLook plugins
   - qlstephen
-  #  - quicklook-csv
-  #  - qlmarkdown
+  - quicklook-csv
+  - qlmarkdown
   ### Security tools from https://objective-see.com/index.html
-  - blockblock
+  # - blockblock
   # - dylibhijackscanner # not found in brew cask search
   #  - kextviewr
   #  - knockknock
@@ -35,16 +35,16 @@ global_homebrew_cask_apps:
   #  - whatsyoursign
 
 global_google_fonts:
-  #  - Audiowide
-  #  - Dosis
+  - Audiowide
+  - Dosis
   - "Open Sans"
-  #  - Orbitron
-  #  - Oswald
+  - Orbitron
+  - Oswald
 
 global_chrome_extensions:
-  #  - { name: "1Password", id: "aomjjhallfgjeglblehebfpbcfeobpgk" }
-  #  - { name: "Ghostery", id: "mlomiejdfkolichcflejclcbmpeaniij" }
-  #  - { name: "GotoMeeting", id: "gaonpiemcjiihedemhopdoefaohcjoch" }
+  - { name: "1Password", id: "aomjjhallfgjeglblehebfpbcfeobpgk" }
+  - { name: "Ghostery", id: "mlomiejdfkolichcflejclcbmpeaniij" }
+  - { name: "GotoMeeting", id: "gaonpiemcjiihedemhopdoefaohcjoch" }
   - { name: "Session Buddy", id: "edacconmaakjimmfgnblocblbcdcpbko" }
-  #  - { name: "uBlock Origin", id: "cjpalhdlnbpafiamejdnhcphjbkeiagm" }
-  #  - { name: "Webex", id: "jlhmfgmfgeifomenelglieieghnjghma" }
+  - { name: "uBlock Origin", id: "cjpalhdlnbpafiamejdnhcphjbkeiagm" }
+  - { name: "Webex", id: "jlhmfgmfgeifomenelglieieghnjghma" }

@@ -14,10 +14,9 @@
     - IanTaylorFB.superlumic-mas
 
   vars:
-    - computername: trixie
+    - computername: slinky
     - configure_git: no
-    - personal_google_fonts:
-        - "Indie Flower"
+    - personal_google_fonts: []
     - personal_homebrew_packages: []
 
     - personal_homebrew_cask_apps: []
@@ -26,7 +25,8 @@
     - mas_signin_dialog: yes
     - mas_installed_apps:
         - { id: 409183694, name: "Keynote (7.1.1)" }
-        - { id: 715768417, name: "Microsoft Remote Desktop 8.0" }
+        - { id: 409201541, name: "Pages (6.1.1)" }
+        - { id: 409203825, name: "Numbers (4.2)" }
     - common_mas_apps:
         - { id: 409183694, name: "Keynote (7.1.1)" }
         - { id: 409201541, name: "Pages (6.1.1)" }
