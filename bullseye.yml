@@ -1,0 +1,167 @@
+---
+
+- hosts: localhost
+  connection: local
+
+  roles:
+    - profile-all
+    - IanTaylorFB.superlumic-computername
+    # These are getting called twice
+    #    - IanTaylorFB.superlumic-osx-defaults
+    #    - IanTaylorFB.superlumic-homebrew
+    - IanTaylorFB.superlumic-google-fonts
+    - IanTaylorFB.superlumic-chrome-extensions
+    - IanTaylorFB.superlumic-mas
+
+  vars:
+    - computername: bullseye
+    - configure_git: no
+    - personal_google_fonts: []
+    - personal_homebrew_packages: []
+
+    - personal_homebrew_cask_apps:
+        - little-snitch
+        - bbedit
+        - sublime
+        - adobe-creative-cloud
+        - adobe-illustrator-cc
+        - amazon-music
+        - filezilla
+        - keka
+        - superduper
+        - virtualbox
+        - virtualbox-extension-pack
+        - istat-menus
+        - pycharm
+
+    - personal_chrome_extensions:
+        - { name: "JetBrains IDE Support", id: "hmhgeddbohgjknpmjagkdomcpobmllji" }
+        - { name: "Web Scraper", id: "jnhgnonknehpejjnehehllkliplmbmhn" }
+
+    - mas_email: "ian.taylor@flyingbinary.com"
+    - mas_signin_dialog: yes
+    - mas_installed_apps:
+        - { id: 409183694, name: "Keynote (7.1.1)" }
+        - { id: 409201541, name: "Pages (6.1.1)" }
+        - { id: 409203825, name: "Numbers (4.2)" }
+        - { id: 1091189122, name: "Bear" }
+        - { id: 408981434, name: "iMovie (10.1)" }
+    - common_mas_apps:
+        - { id: 409183694, name: "Keynote (7.1.1)" }
+        - { id: 409201541, name: "Pages (6.1.1)" }
+        - { id: 409203825, name: "Numbers (4.2)" }
+    - unusual_mas_apps:
+        - { id: 1091189122, name: "Bear" }
+        - { id: 408981434, name: "iMovie (10.1)" }
+    - rare_mas_apps:
+        - { id: 485812721, name: "TweetDeck (3.9.889)" }
+        - { id: 424389933, name: "Final Cut Pro (10.2.2)" }
+        - { id: 434290957, name: "Motion (5.2.2)" }
+        - { id: 408981381, name: "iPhoto (9.6.1)" }
+        - { id: 682658836, name: "GarageBand (10.1.6)" }
+    - use_brew_instead:
+        - { id: 406056744, name: "Evernote (6.11.1)" }
+
+
+    - osx_defaults:
+        - domain: 'com.apple.dock'
+          key: 'show-process-indicators'
+          type: boolean
+          value: true
+        - domain: 'com.apple.screencapture'
+          key: 'type'
+          type: string
+          value: png
+        - domain: 'NSGlobalDomain'
+          key: 'KeyRepeat'
+          type: integer
+          value: 2
+        - domain: 'NSGlobalDomain'
+          key: 'InitialKeyRepeat'
+          type: integer
+          value: 15
+        - domain: 'com.apple.menuextra.battery'
+          key: 'ShowPercent'
+          type: string
+          value: 'YES'
+        - domain: 'com.apple.finder'
+          key: 'FXPreferredViewStyle'
+          type: string
+          value: "clmv"
+        - domain: 'NSGlobalDomain'
+          key: 'NSNavPanelExpandedStateForSaveMode'
+          type: boolean
+          value: true
+        - domain: 'NSGlobalDomain'
+          key: 'PMPrintingExpandedStateForPrint'
+          type: boolean
+          value: true
+        - domain: 'NSGlobalDomain'
+          key: 'NSQuitAlwaysKeepsWindows'
+          type: boolean
+          value: false
+        - domain: 'com.apple.desktopservices'
+          key: 'DSDontWriteNetworkStores'
+          type: boolean
+          value: true
+        - domain: 'com.apple.print.PrintingPrefs'
+          key: 'Quit When Finished'
+          type: boolean
+          value: true
+
+
+#      # 6 The OSX application firewall is enabled (system-wide).
+#      - domain: 'com.apple.alf'
+#        key: 'globalstate'
+#        type: boolean
+#        value: true
+#      # 8 A password is required to wake the computer from sleep or screen saver (system-wide)
+#      - domain: 'com.apple.'
+#        key: ''
+#        type: boolean
+#        value: true
+#      com.apple.screensaver askForPassword -bool true
+#      # 10 There is no delay between starting the screen saver and locking the machine (system-wide)
+#      com.apple.screensaver askForPasswordDelay -bool false
+#      # 12 Logging is enabled for the operating system
+#      com.apple.alf loggingenabled -bool true
+#      # 14 Stealth mode is enabled for OSX: Computer does not respond to ICMP ping requests or connection attempts from a closed TCP/UDP port. (system-wide)
+#      com.apple.alf stealthenabled -bool true"
+#      # 16 Automatic whitelisting of Apple-signed applications through the firewall is disabled (system-wide)
+#      com.apple.alf allowsignedenabled -bool false
+#      # 18 Captive portal for connecting to new networks is disabled to prevent MITM attacks
+#      com.apple.captive.control Active -bool false
+#      # 20 Hidden files are displayed in Finder
+#      # TODO: Requires killall Dock after setting change
+#      com.apple.finder AppleShowAllFiles -bool true
+#      # 21 All file extenstions are displayed in Finder
+#      # TODO: Requires killall Dock after setting change
+#      NSGlobalDomain AppleShowAllExtensions -bool true
+#      # 22 Display full POSIX path as Finder window title
+#      # TODO: Requires killall Dock after setting change
+#      com.apple.finder _FXShowPosixPathInTitle -bool true
+#      # 23 Disable the warning when changing a file extension
+#      # TODO: Requires killall Dock after setting change
+#      com.apple.finder FXEnableExtensionChangeWarning -bool false
+#      # 24 Avoid creating .DS_Store files on network volumes
+#      # TODO: Requires killall Dock after setting change
+#      com.apple.desktopservices DSDontWriteNetworkStores -bool true
+#      # 25 Use list view in all Finder windows by default
+#      # TODO: Requires killall Dock after setting change
+#      # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`, `Nlsv`
+#      # Icon view, (Three-) Column view, Flow view, (New-) List view
+#      com.apple.finder FXPreferredViewStyle -string "clmv"
+#      # 26 Empty Trash securely by default
+#      # TODO: Requires killall Dock after setting change
+#      com.apple.finder EmptyTrashSecurely -bool true
+#      # 43 Documents are not stored to iCloud Drive by default. (May be mistaken if iCloud is disabled)
+#      NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+#
+#
+#
+#
+#
+#
+#
+#
+#
