@@ -25,7 +25,8 @@
         - sublime
         - adobe-creative-cloud
         - adobe-illustrator-cc
-        - amazon-music
+        # Amazon music is failing to install
+        # - amazon-music
         - filezilla
         - keka
         - superduper
