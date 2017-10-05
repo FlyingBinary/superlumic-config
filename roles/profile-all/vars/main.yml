@@ -48,3 +48,4 @@ global_chrome_extensions:
   - { name: "Session Buddy", id: "edacconmaakjimmfgnblocblbcdcpbko" }
   - { name: "uBlock Origin", id: "cjpalhdlnbpafiamejdnhcphjbkeiagm" }
   - { name: "Webex", id: "jlhmfgmfgeifomenelglieieghnjghma" }
+  - { name: "Bear", id: "bipgnccfcjnfnpnnllchfeillaekkofo" }
