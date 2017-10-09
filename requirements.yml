@@ -24,10 +24,10 @@
   name: IanTaylorFB.superlumic-mas
   version: fbmaster
 
-#  - src: https://github.com/FlyingBinary/ansible-role-cli.git
-#    name: IanTaylorFB.superlumic-cli
-#    version: fbmaster
-#
+- src: https://github.com/FlyingBinary/ansible-role-cli.git
+  name: IanTaylorFB.superlumic-cli
+  version: fbmaster
+
 #  - src: https://github.com/FlyingBinary/ansible-role-mysql.git
 #    name: IanTaylorFB.superlumic-mysql
 #    version: fbmaster

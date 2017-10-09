@@ -15,7 +15,13 @@
 
   vars:
     - computername: bullseye
+    # This variable is used in homebrew role
     - configure_git: no
+    # These git variables are used in both homebrew and cli roles
+    # Why are they in homebrew?
+    # Used in cli
+    - git_user_name: IanTaylorFB
+    - git_user_email: ian.taylor@flyingbinary.com
     - personal_google_fonts: []
     - personal_homebrew_packages: []
 
