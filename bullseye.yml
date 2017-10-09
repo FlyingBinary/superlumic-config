@@ -12,6 +12,7 @@
     - IanTaylorFB.superlumic-google-fonts
     - IanTaylorFB.superlumic-chrome-extensions
     - IanTaylorFB.superlumic-mas
+    - IanTaylorFB.superlumic-cli
 
   vars:
     - computername: bullseye
