@@ -14,7 +14,8 @@ global_homebrew_cask_apps:
   - firefox
   - google-chrome
   #  - little-snitch
-  - parallels-desktop
+  # Parallels Desktop cask has been removed
+  # - parallels-desktop
   - skype
   - tableau
   - vyprvpn
