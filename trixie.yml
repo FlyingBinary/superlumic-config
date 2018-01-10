@@ -20,7 +20,7 @@
     - personal_google_fonts: []
     - personal_homebrew_packages: []
 
-    - personal_homebrew_cask_apps: []
+    - personal_homebrew_cask_apps:
         - bbedit
 
     - mas_email: "jacqui.taylor@flyingbinary.com"
