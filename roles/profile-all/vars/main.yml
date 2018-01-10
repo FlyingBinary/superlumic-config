@@ -13,7 +13,7 @@ global_homebrew_cask_apps:
   - evernote
   - firefox
   - google-chrome
-  #  - little-snitch
+  - little-snitch
   # Parallels Desktop cask has been removed
   # - parallels-desktop
   - skype
@@ -24,16 +24,16 @@ global_homebrew_cask_apps:
   - quicklook-csv
   - qlmarkdown
   ### Security tools from https://objective-see.com/index.html
-  # - blockblock
+  - blockblock
   # - dylibhijackscanner # not found in brew cask search
-  #  - kextviewr
-  #  - knockknock
+  - kextviewr
+  - knockknock
   ## - lockdown # not working on Sierra 10.12
   ## - ostiarius # not needed after El Capitan 10.11
-  #  - oversight
-  #  - ransomwhere
-  #  - taskexplorer
-  #  - whatsyoursign
+  - oversight
+  - ransomwhere
+  - taskexplorer
+  - whatsyoursign
 
 global_google_fonts:
   - Audiowide
@@ -49,4 +49,4 @@ global_chrome_extensions:
   - { name: "Session Buddy", id: "edacconmaakjimmfgnblocblbcdcpbko" }
   - { name: "uBlock Origin", id: "cjpalhdlnbpafiamejdnhcphjbkeiagm" }
   - { name: "Webex", id: "jlhmfgmfgeifomenelglieieghnjghma" }
-  - { name: "Bear", id: "bipgnccfcjnfnpnnllchfeillaekkofo" }
+  - { name: "TrafficLight", id: "cfnpidifppmenkapgihekkeednfoenal" }
