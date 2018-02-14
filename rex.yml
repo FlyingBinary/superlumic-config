@@ -36,6 +36,7 @@
         # Amazon music is failing to install
         # - amazon-music
         - filezilla
+        - grandperspective
         - keka
         - superduper
         - virtualbox

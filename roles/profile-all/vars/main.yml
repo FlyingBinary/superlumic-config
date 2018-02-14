@@ -1,23 +1,23 @@
 ---
 
 global_homebrew_packages:
+  - dockutil
   - git
   - openssl
-  - python
-  - python3
+  # - python
+  # - python3
 
 global_homebrew_cask_apps:
   ### Standard applications
   - 1password
-  - dropbox
-  - evernote
+  # - dropbox
+  # - evernote
   - firefox
   - google-chrome
   - little-snitch
-  # Parallels Desktop cask has been removed
-  # - parallels-desktop
-  - skype
-  - tableau
+  # - parallels
+  # - skype
+  # - tableau
   - vyprvpn
   ### QuickLook plugins
   - qlstephen

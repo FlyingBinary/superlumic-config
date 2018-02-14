@@ -27,24 +27,23 @@
     - personal_homebrew_packages: []
 
     - personal_homebrew_cask_apps:
-        - little-snitch
         - bbedit
-        - sublime
-        - adobe-creative-cloud
-        - adobe-illustrator-cc
+        # - sublime
+        # - adobe-creative-cloud
+        # - adobe-illustrator-cc
         # Amazon music is failing to install
         # - amazon-music
-        - filezilla
-        - keka
-        - superduper
-        - virtualbox
-        - virtualbox-extension-pack
+        # - filezilla
+        # - keka
+        # - superduper
+        # - virtualbox
+        # - virtualbox-extension-pack
         - istat-menus
         - pycharm
 
     - personal_chrome_extensions:
         - { name: "JetBrains IDE Support", id: "hmhgeddbohgjknpmjagkdomcpobmllji" }
-        - { name: "Web Scraper", id: "jnhgnonknehpejjnehehllkliplmbmhn" }
+        # - { name: "Web Scraper", id: "jnhgnonknehpejjnehehllkliplmbmhn" }
 
     - mas_email: "ian.taylor@flyingbinary.com"
     - mas_signin_dialog: yes
@@ -53,7 +52,7 @@
         - { id: 409201541, name: "Pages (6.1.1)" }
         - { id: 409203825, name: "Numbers (4.2)" }
         - { id: 1091189122, name: "Bear" }
-        - { id: 408981434, name: "iMovie (10.1)" }
+        # - { id: 408981434, name: "iMovie (10.1)" }
     - common_mas_apps:
         - { id: 409183694, name: "Keynote (7.1.1)" }
         - { id: 409201541, name: "Pages (6.1.1)" }
