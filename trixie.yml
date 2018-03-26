@@ -15,7 +15,7 @@
     - IanTaylorFB.superlumic-cli
 
   vars:
-    - computername: trixie
+    - computername: Trixie
     - configure_git: no
     - personal_google_fonts: []
     - personal_homebrew_packages: []
@@ -46,49 +46,101 @@
     - use_brew_instead:
         - { id: 406056744, name: "Evernote (6.11.1)" }
 
+    # macOS default settings
+    - AppStore_Enabled: false
 
-    - osx_defaults:
-        - domain: 'com.apple.dock'
-          key: 'show-process-indicators'
-          type: boolean
-          value: true
-        - domain: 'com.apple.screencapture'
-          key: 'type'
-          type: string
-          value: png
-        - domain: 'NSGlobalDomain'
-          key: 'KeyRepeat'
-          type: integer
-          value: 2
-        - domain: 'NSGlobalDomain'
-          key: 'InitialKeyRepeat'
-          type: integer
-          value: 15
-        - domain: 'com.apple.menuextra.battery'
-          key: 'ShowPercent'
-          type: string
-          value: 'YES'
-        - domain: 'com.apple.finder'
-          key: 'FXPreferredViewStyle'
-          type: string
-          value: "clmv"
-        - domain: 'NSGlobalDomain'
-          key: 'NSNavPanelExpandedStateForSaveMode'
-          type: boolean
-          value: true
-        - domain: 'NSGlobalDomain'
-          key: 'PMPrintingExpandedStateForPrint'
-          type: boolean
-          value: true
-        - domain: 'NSGlobalDomain'
-          key: 'NSQuitAlwaysKeepsWindows'
-          type: boolean
-          value: false
-        - domain: 'com.apple.desktopservices'
-          key: 'DSDontWriteNetworkStores'
-          type: boolean
-          value: true
-        - domain: 'com.apple.print.PrintingPrefs'
-          key: 'Quit When Finished'
-          type: boolean
-          value: true
+    - Bluetooth_Enabled: true                         # Enable Bluetooth configuration
+    - Bluetooth_ShowInMenuBar: true                   # Show Bluetooth in menu bar
+
+    - Dashboard_Enabled: false
+    - DateTime_Enabled: false
+
+    - DesktopHotCorners_Enabled: true                 # Enable Desktop Hot Corners configuration
+    - DesktopHotCorners_TopLeft: 2                     # Set Top Left hot corner action
+    - DesktopHotCorners_TopRight: 4                    # Set Top Right hot corner action
+    - DesktopHotCorners_BottomLeft: 5                  # Set Bottom Left hot corner action
+    - DesktopHotCorners_BottomRight: 3                 # Set Bottom Right hot corner action
+
+    - DesktopScreenSaver_Enabled: false
+    - Displays_Enabled: false
+
+    - Dock_Enabled: true                              # Enable Dock configuration
+    - Dock_TileSize: 64                                # Dock size
+    - Dock_Magnification: false                         # Dock magnification
+    - Dock_LargeSize: 64                              # Icon size of magnified Dock items
+    - Dock_Orientation: "bottom"                       # Dock orientation: left, bottom, right
+    - Dock_MinEffect: "genie"                          # Minimization effect: genie, scale, suck
+    - Dock_AppleActionOnDoubleClick: "None"        # Double-click a window's title title bar to: None, Minimize, Maximize
+    - Dock_MinimizeToApplication: false                # Minimize windows appliction into icon (true, false)
+    - Dock_LaunchAnim: true                            # Animate opening applications
+    - Dock_Autohide: false                             # Automatically hide and show the Dock
+    - Dock_ShowProcessIndicators: true                 # Show indicator for open applications
+    - Dock_ShowHidden: false                           # Display translucent Dock icons for hidden applications
+
+    - Finder_Enabled: true                            # Enable Finder configuration
+    - Finder_ShowHardDrivesOnDesktop: false            # Show hard drives on the desktop
+    - Finder_ShowExternalHardDrivesOnDesktop: true     # Show external hard drives on the desktop
+    - Finder_ShowRemovableMediaOnDesktop: false         # Show CDs,DVDs and iPods on the desktop
+    - Finder_ShowMountedServersOnDesktop: false        # Show connected servers on the desktop
+    - Finder_NewWindowTarget: "PfHm"                   # New Finder windows shows (PfCm:Computer, PfVo:Computer's HD, PfHm:Home, PfDe:Desktop, PfDo:Documents, PfAF:All My files )
+    - Finder_FinderSpawnTab: true                      # Open folders in tabs instead of new windows
+    - Finder_AppleShowAllExtensions: true             # Show all fiename extensions
+    - Finder_FXEnableExtensionChangeWarning: false      # Show warning before changing an extension
+    - Finder_WarnOnEmptyTrash: true                   # Show warning before emptying the trash
+    - Finder_FXDefaultSearchScope: "SCev"              # When performing a search (SCev:Search This Mac, SCcf:Search the Current Folder, SCsp:Use the Previous Search Scope)
+    - Finder_AppleShowAllFiles: true                  # Show hidden files
+    - Finder_FXPreferredViewStyle: "clmv"              # View as (icnv:Icons, Nlsv:List, clmv:Column, Flwv:Cover Flow)
+    - Finder_FXPreferredGroupBy: "Name"                # Arrange By (None, Name, Application Category, Date Last Opened, Date Added, Size, Finder Tags)
+    - Finder_ShowTabView: true                         # Show Tab Bar
+    - Finder_ShowPathbar: true                        # Show Path Bar
+    - Finder_ShowStatusBar: true                      # Show Status Bar
+    - Finder_ShowSidebar: true                         # Show Side Bar
+    - Finder_ColumnShowIcons: true                     # Show Preview
+    - Finder_FXShowPosixPathInTitle: false            # Show full POSIX path as Finder window title
+    # TODO: Finder sidebar settings
+
+    - General_Enabled: true                           # Enable General configuration
+    - General_AppleAquaColorVariant: 1                 # Set appearance (1: Blue, 6: Graphite)
+    - General_AppleInterfaceStyle: ""                  # Use Dark menu bar and Dock (Empty or "Dark")
+    - General_AutoHideMenuBar: false                   # Automatically hide and show the menu bar
+    - General_AppleHighlightColor: "Blue"              # Highlight color (Red, Orange, Yellow, Green, Blue, Purple, Pink, Brown, Graphite)
+    - General_SidebarIconSize: 1                       # Sidebar icon size (Small: 1, Medium: 2, Large: 3)
+    - General_AppleShowScrollBars: "Automatic"         # Scroll bar visibility (WhenScrolling, Automatic, Always)
+    - General_AppleScrollerPagingBehavior: 0           # Click in the scrollbar to (0: Jump to the next page, 1: Jump to the spot that's clicked)
+    - General_NSCloseAlwaysConfirmsChanges: true      # Ask to keep changes when closing documents
+    - General_CloseWindowsWhenQuittingApp: false       # Close windows when quitting an application
+    - General_NSScrollAnimationEnabled: true           # Smooth scrolling (Disable on older Macs)
+    - General_ExpandSavePanel: true                   # Expand save panel
+    - General_ShowBatteryPercent: YES                   # Show battery percentage in menu bar
+
+    - ICloud_Enabled: false
+
+    - Keyboard_Enabled: true                            # Enable Keyboard configuration
+    - Keyboard_KeyRepeat: 2                              # Set key repeat rate (Off: 300000, Slow: 120, Fast: 2)
+    - Keyboard_InitialKeyRepeat: 15                      # Set delay until repeat, in milliseconds (Long: 120, Short: 15)
+    - Keyboard_fnState: false                            # Use F1, F2, etc. keys as standard function keys
+    - Keyboard_kDim: true                               # Adjust keyboard brightness in low light
+    - Keyboard_kDimTime: 10                               # Dim keyboard after idle time (in seconds, 0 is Never)
+    - Keyboard_AutomaticSpellingCorrectionEnabled: true # Correct spelling automatically
+    - Keyboard_AutomaticQuoteSubstitutionEnabled: true  # Use smart quotes
+    - Keyboard_AutomaticDashSubstitutionEnabled: true   # Use smart dashes
+    - Keyboard_AppleKeyboardUIMode: 3                    # Full Keyboard Access (1 : Text boxes and lists only, 3 : All controls)
+    - Keyboard_PowerButtonSleepsSystem: false            # Prevent accidental Power button presses from sleeping system
+    - Keyboard_PressAndHoldEnabled: false                # Disable press-and-hold for keys in favor of key repeat
+    
+    - LanguageRegion_Enabled: false
+
+    - MissionControl_Enabled: true                    # Enable Mission Control configuration
+    - MissionControl_MruSpaces: false                  # Automatically rearrange Spaces based on most recent use
+    - MissionControl_SwitchOnActivate: true            # When switching to an application, switch to a Space with open windows for the application
+    - MissionControl_GroupByApp: true                  # Group windows by application in Mission Control
+    - MissionControl_SpansDisplays: true               # Displays have separate Spaces
+
+    - Safari_Enabled: false
+
+    - Trackpad_Enabled: true                          # Enable trackpad configuration
+    - Trackpad_TapToClick: 1                           # Enable tap to click for this user
+    - Trackpad_TapToDrag: 1                            # Enable tap to drag (without drag lock)
+    - Trackpad_Tracking: 3.0                           # Set trackpad tracking speed (0.0 - 3.0)
+    - Trackpad_ZoomScreen: true                        # Enable screen zoom with Ctrl-Scroll
+    - Trackpad_SetCursorSize: 2.5                      # Set the cursor size
