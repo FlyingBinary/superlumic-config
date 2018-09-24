@@ -16,15 +16,15 @@ global_homebrew_cask_apps:
   - google-chrome
   - little-snitch
   # - parallels
-  # - skype
+  - skype
   # - tableau
   - vyprvpn
+  - expressvpn
   ### QuickLook plugins
   - qlstephen
   - quicklook-csv
   - qlmarkdown
   ### Security tools from https://objective-see.com/index.html
-  - blockblock
   # - dylibhijackscanner # not found in brew cask search
   - kextviewr
   - knockknock
@@ -34,6 +34,8 @@ global_homebrew_cask_apps:
   - ransomwhere
   - taskexplorer
   - whatsyoursign
+  # BlockBlock is at the end of the list so it doesn't stop the script
+  - blockblock
 
 global_google_fonts:
   - Audiowide
