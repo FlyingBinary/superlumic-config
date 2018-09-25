@@ -52,3 +52,4 @@ global_chrome_extensions:
   - { name: "uBlock Origin", id: "cjpalhdlnbpafiamejdnhcphjbkeiagm" }
   - { name: "Webex", id: "jlhmfgmfgeifomenelglieieghnjghma" }
   - { name: "TrafficLight", id: "cfnpidifppmenkapgihekkeednfoenal" }
+  - { name: "Bear", id: "bipgnccfcjnfnpnnllchfeillaekkofo"}
